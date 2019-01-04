@@ -59,4 +59,24 @@ header.startup h1 {
   border-width: 5px;
   cursor: pointer;
 }
-  
+.btn-primary:focus, .btn-primary.focus {
+  box-shadow: 0px 0px 0px 6px rgba(0, 255, 0, 0.1);
+}
+
+.btn-primary.disabled, .btn-primary:disabled {
+  color: #34b862;
+  background-color: #34b862;
+  border-color: #34b862;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active,
+.show > .btn-primary.dropdown-toggle {
+  color: #34b862;
+  background-color: #34b862;
+  border-color: #34b862;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus,
+.show > .btn-primary.dropdown-toggle:focus {
+  box-shadow: 0px 0px 0px 6px rgba(0, 255, 0, 0.1);
+}
